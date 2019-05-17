@@ -15,7 +15,7 @@ one user is created by defualt.
 
 Login page look like this
 
-![ScreenShot](/pic/Loigin_Page.png)
+	![ScreenShot](/pic/Loigin_Page.png)
 
 
 and labeled tweets will be saved in each user file.
