@@ -1,0 +1,77 @@
+
+    <!DOCTYPE html>
+<html lang="en">
+<head>
+  <title></title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.0/jquery.min.js"></script>
+
+</head>
+
+
+
+
+<body>
+
+    <br><br>
+
+        <a  style="position: absolute; right: 90px;" href="{{ url_for('logout') }}" type="submit" class="btn btn-lg" >
+
+           Log out
+
+        </a>
+
+
+    <div class="container col-xs-5 col-xs-offset-3">
+      <h1 style="position: relative; left: 210px; bottom: 20px;" >Current Tweet {{ count }} </h1>
+    <br><br>
+
+    <!-- tweet box with buttons --> 
+    <div style=" background-color:#f5f5f5; position: relative; width:711px; height:350px;  border: 1px solid #e3e3e3;  border-radius: 4px;
+    min-height: 20px; padding: 19px; margin-bottom: 20px; box-sizing: border-box;" >
+
+         <p name="tweet" style="font-size: 22px; text-align:center;">  {{ paragraph }}  </p>
+
+        <br>
+
+        <div class="btn-group" style="position: absolute; top: 150px; left: 38px; margin-bottom:20px;" >
+
+        <form action = "/" method = "post">
+
+
+                         <fieldset style="text-align:right; font-size:17px;  ">
+                 <legend > التصنيف </legend>
+
+             <label>  اخبار <input type="checkbox" name="context" value="News" > </label> &nbsp;&nbsp;&nbsp;
+             <label> أخرى <input type="checkbox" name="context" value="Other" > </label> &nbsp;&nbsp;&nbsp;
+             <label> خدمات <input type="checkbox" name="context" value="Service" > </label> &nbsp;&nbsp;&nbsp;
+             <label>   خطأ فاتورة <input type="checkbox" name="context" value="Bill"></label> &nbsp;&nbsp;&nbsp;
+             <label> تغطية الشبكة <input type="checkbox" name="context" value="Network" > </label> &nbsp;&nbsp;&nbsp;
+             <label> أسعار <input type="checkbox" name="context" value="Price" ></label> &nbsp;&nbsp;&nbsp;
+             <label> سرعة <input type="checkbox" name="context" value="Speed" > </label>
+
+
+
+             </fieldset>
+
+
+
+             <input  {{ disabled }}  style="padding:18px 46px; margin:5px; width:145px; height:62px; color:white; background:#4cae4c; " class="btn btn-lg" type="submit" name="submit" value="Positive">
+             <input  {{ disabled }}  style="padding:18px 46px; margin:5px; width:145px; height:62px; color:white; background:#d9524e;" class="btn btn-lg" type="submit" name="submit" value="Negative">
+             <input  {{ disabled }}  style="padding:18px 46px; margin:5px; width:145px; height:62px; color:white; background:#6c7c7c;" class="btn btn-lg" type="submit" name="submit" value="Neutral">
+             <input  {{ disabled }}  style="padding:18px 46px; margin:5px; width:145px; height:62px; color:white; background:#42758a;" class="btn btn-lg" type="submit" name="submit" value="Spam">
+
+            <br><br>
+
+
+        </form>
+
+        </div>
+    </div>
+
+
+    </div> 
+</body>
+</html>
