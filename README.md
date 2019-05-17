@@ -15,8 +15,7 @@ one user is created by defualt.
 
 Login page look like this
 
-![Alt text](Text_Cleaning/WebPageWithLogin6/pic/Loigin_Page.png?raw=true "Title")
-
+![ScreenShot](https://raw.githubusercontent.com/Abdullah955/Tweets_labeling_tool/pic/Loigin_Page.png)
 
 and labeled tweets will be saved in each user file.
 
